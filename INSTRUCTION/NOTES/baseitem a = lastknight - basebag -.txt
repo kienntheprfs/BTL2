@@ -1,0 +1,36 @@
+baseitem a = lastknight -> basebag -> get()
+if (Antidote -> canUse(lastknight())
+Antidote -> use(lastknight());
+else{
+...
+}
+
+4 knight bag | 4 knight | 4 knight 
+any other important techniques involving pointer objects and function overriding and polymorphism ?
+Sent message. any other important techniques involving pointer objects and function overriding and polymorphism ?
+Yes, there are several other important techniques involving pointers, function overriding, and polymorphism in C++. Here are a few examples:
+
+Abstract base classes and pure virtual functions: An abstract base class is a class that has one or more pure virtual functions. A pure virtual function is a virtual function that has no implementation in the base class and must be overridden by derived classes. Abstract base classes cannot be instantiated and are used to define interfaces that derived classes must implement.
+
+Dynamic binding: Dynamic binding is the process of determining which function to call at runtime based on the dynamic type of an object. This is done using virtual functions and allows you to write code that works with objects of different classes in a generic way.
+
+Object slicing: Object slicing occurs when you assign an object of a derived class to an object of a base class. This can cause the loss of data specific to the derived class. To avoid object slicing, you should use pointers or references to base class objects instead of base class objects themselves.
+
+Virtual destructors: If you have a base class pointer that points to a derived class object and you delete the pointer, the derived class’s destructor will not be called if the base class’s destructor is not virtual. To ensure that the derived class’s destructor is called, you should always make the base class’s destructor virtual if the class has any virtual functions.
+
+These are just a few examples of the many techniques involving pointers, function overriding, and polymorphism in C++. These concepts are fundamental to object-oriented programming in C++ and are widely used in practice.
+
+Received message. Yes, there are several other important techniques involving pointers, function overriding, and polymorphism in C++. Here are a few examples: - **Abstract base classes and pure virtual functions**: An abstract base class is a class that has one or more pure virtual functions. A pure virtual function is a virtual function that has no implementation in the base class and must be overridden by derived classes. Abstract base classes cannot be instantiated and are used to define interfaces that derived classes must implement. - **Dynamic binding**: Dynamic binding is the process of determining which function to call at runtime based on the dynamic type of an object. This is done using virtual functions and allows you to write code that works with objects of different classes in a generic way. - **Object slicing**: Object slicing occurs when you assign an object of a derived class to an object of a base class. This can cause the loss of data specific to the derived class. To avoid object slicing, you should use pointers or references to base class objects instead of base class objects themselves. - **Virtual destructors**: If you have a base class pointer that points to a derived class object and you delete the pointer, the derived class's destructor will not be called if the base class's destructor is not virtual. To ensure that the derived class's destructor is called, you should always make the base class's destructor virtual if the class has any virtual functions. These are just a few examples of the many techniques involving pointers, function overriding, and polymorphism in C++. These concepts are fundamental to object-oriented programming in C++ and are widely used in practice.
+any important techniques that programmer use while working with so many inheritance classes that have another class as their attributes and dont know which one to implement
+Sent message.
+When working with complex class hierarchies that involve multiple levels of inheritance and composition (i.e., classes that have other classes as their attributes), it can be challenging to decide which classes to implement and how to organize the code. Here are a few techniques that can help:
+
+Use interfaces and abstract base classes: Interfaces and abstract base classes define a contract that derived classes must follow. This can help you organize your code and ensure that all classes in the hierarchy implement the required functionality.
+
+Favor composition over inheritance: Instead of using inheritance to reuse code, consider using composition. This means defining classes that have other classes as their attributes and delegating functionality to these attributes. Composition can make your code more flexible and easier to maintain.
+
+Use the Liskov Substitution Principle (LSP): The LSP states that objects of a derived class should be able to replace objects of a base class without altering the correctness of the program. This means that derived classes should not violate the contract defined by the base class. Following the LSP can help you design class hierarchies that are easy to understand and maintain.
+
+Use design patterns: Design patterns are reusable solutions to common problems in software design. Many design patterns, such as the Template Method pattern and the Strategy pattern, can help you organize complex class hierarchies and make your code more flexible and reusable.
+
+These are just a few techniques that can help you work with complex class hierarchies. It’s important to carefully design your classes and their relationships to ensure that your code is easy to understand, maintain, and extend

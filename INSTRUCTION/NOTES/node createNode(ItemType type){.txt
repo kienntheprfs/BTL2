@@ -1,0 +1,20 @@
+node* createNode(ItemType type){
+    string nameofType("");
+    switch (type)
+{
+case ANTIDOTE:
+    nameofType = "Antidote";
+    break;
+case PHOENIXDOWNI:
+    nameofType = "PhoenixI";
+    break;
+case PHOENIXDOWNII:
+    nameofType = "PhoenixII";
+    break;
+case PHOENIXDOWNIII:
+    nameofType = "PhoenixIII";
+    break;
+case PHOENIXDOWNIV:
+    nameofType = "PhoenixIV";
+    break;
+}10
